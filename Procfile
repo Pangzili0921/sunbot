@@ -1,1 +1,1 @@
-worker:python sunbot.py
+worker: python sunbot.py
