@@ -6,7 +6,7 @@ import json
 import requests
 from requests.models import Response
 from bs4 import BeautifulSoup
-
+import os
 
 
 client = discord.Client()
@@ -42,8 +42,10 @@ async def on_message(message):
 		embed.add_field(name="한강 온도",value=str(o1) +' 기준 한강의 온도는' + str(o2) + '입니다.')
 		await message.channel.send(embed=embed)
 
+access_token=os.environ["BOT_TOKEN"]
+
 # 봇을 실행시키기 위한 토큰을 작성해주는 곳
-client.run('OTAwMjMzMzkzOTc4MTE0MDU5.YW-Vrg.2-RBGXEpYncwwNCAG3MOzMMuTe8')
+client.run(access_token)
 
 
 
