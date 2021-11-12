@@ -1,0 +1,13 @@
+asyncio
+selenium
+discord.py[voice]
+pip
+discord
+pytz
+datetime
+asyncio
+requests
+Response
+BeautifulSoup
+bs4
+urllib3
